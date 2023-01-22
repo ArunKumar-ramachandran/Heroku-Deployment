@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('rf_model.pkl', 'rb'))
+model = pickle.load(open('regressor_lm.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -20,7 +20,7 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='The Air Quality index is {}'.format(output))
+    return render_template('index.html', prediction_text='The recommended crew size is {}'.format(output))
 
 
 if __name__ == "__main__":
