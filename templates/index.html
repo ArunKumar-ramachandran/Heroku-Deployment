@@ -106,12 +106,12 @@ input[type=submit]:hover {
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="T" placeholder="Age" required="required" /> <br>
-        <input type="text" name="SLP" placeholder="Tonnage" required="required" /><br>
-		<input type="text" name="H" placeholder="Passengers" required="required" /> <br>
-		<input type="text" name="VV" placeholder="Length" required="required" /> <br>
-		<input type="text" name="V" placeholder="Cabins" required="required" /> <br>
-		<input type="text" name="VM" placeholder="Passenger density" required="required" /> <br>
+    	<input type="text" name="Age" placeholder="Age" required="required" /> <br>
+        <input type="text" name="Tonnage" placeholder="Tonnage" required="required" /><br>
+		<input type="text" name="Passengers" placeholder="Passengers" required="required" /> <br>
+		<input type="text" name="Length" placeholder="Length" required="required" /> <br>
+		<input type="text" name="Cabins" placeholder="Cabins" required="required" /> <br>
+		<input type="text" name="Passenger density" placeholder="Passenger density" required="required" /> <br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
